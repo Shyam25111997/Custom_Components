@@ -1,4 +1,4 @@
-// import { Formio } from 'formiojs';
+import { Formio } from 'formiojs';
 import PanelWithStep from './rating/PanelWithStep';
 
 Formio.use([
@@ -9,25 +9,25 @@ Formio.use([
     }
 ])
 
-// Formio.builder(document.getElementById("builder"), {}, {
-//     sanitizeConfig: {
-//         addTags: ["svg", "path"],
-//         addAttr: ["d", "viewBox"]
-//     }
-// }).then(() => {
+Formio.builder(document.getElementById("builder"), {}, {
+    sanitizeConfig: {
+        addTags: ["svg", "path"],
+        addAttr: ["d", "viewBox"]
+    }
+}).then(() => {
 
-// });
+});
 
 
-// Formio.createForm(document.getElementById('formio'), {
-//     components: [
-//         {
-//             type: 'panelWithStep',
-//             label: 'Step 1',
-//             stepNumber: 1,
-//             components: []
-//         }
-//     ]
-// });
+Formio.createForm(document.getElementById('formio'), {
+    components: [
+        {
+            type: 'panelWithStep',
+            label: 'Step 1',
+            stepNumber: 1,
+            components: []
+        }
+    ]
+});
 
 

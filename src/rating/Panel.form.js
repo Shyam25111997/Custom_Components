@@ -1,4 +1,4 @@
-// import { Formio } from "formiojs";
+import { Formio } from "formiojs";
 import PanelWithStepEditDisplay from "./editForm/PanelWithStep.edit.display.js";
 
 export default function (...extend) {
